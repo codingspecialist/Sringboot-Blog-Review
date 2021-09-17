@@ -8,10 +8,12 @@ import javax.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Builder
 @AllArgsConstructor
 @Getter
+@NoArgsConstructor  // JPA는 모델생성시 기본 생성자가 꼭 필요하다.
 @Entity
 public class User {
 	@Id
@@ -20,4 +22,5 @@ public class User {
 	private String username;
 	private String password;
 	private String email;
+	
 }
