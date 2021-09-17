@@ -12,7 +12,7 @@ import lombok.Getter;
 @Builder
 @AllArgsConstructor
 @Getter
-@Entity // 이게 있어야 테이블이 만들어진다.
+@Entity
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
